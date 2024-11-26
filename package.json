@@ -1,0 +1,35 @@
+{
+  "name": "backend-mock",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "npx nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helciopenha/backend-mock.git"
+  },
+  "author": "helciopenha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helciopenha/backend-mock/issues"
+  },
+  "homepage": "https://github.com/helciopenha/backend-mock#readme",
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.11.0",
+    "pino": "^9.3.2"
+  }
+}

@@ -1,0 +1,18 @@
+version: '3.6'
+services:
+  backend-mock:
+    env_file:
+      - ./.env
+    build:
+      dockerfile: ./docker/backend-mock.dockerfile
+      context: .
+    image: helciopenha/backend-mock
+    container_name: backend-mock
+    volumes:
+      - .:/var/www
+    restart: always
+    entrypoint: ["npm", "run", "start"]
+    ports:
+      - "3000:3000"
+    environment:
+      - STAGE=workshop
