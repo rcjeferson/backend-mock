@@ -1,0 +1,65 @@
+# Ignorar arquivos e pastas específicas do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar diretórios e arquivos de controle de versão
+.git
+.gitignore
+
+# Ignorar arquivos do ambiente local
+.env
+*.env
+*.local
+
+# Ignorar arquivos de log
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar diretórios do Node.js
+node_modules/
+*.tsbuildinfo
+
+# Ignorar build outputs
+dist/
+build/
+out/
+
+# Ignorar arquivos temporários ou de backup
+*.swp
+*.swo
+*.tmp
+*.bak
+*.backup
+*.orig
+*.old
+
+# Ignorar arquivos específicos de IDEs e editores
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignorar arquivos do Docker local
+docker-compose.override.yml
+.dockerignore
+
+# Ignorar arquivos específicos de testes
+coverage/
+*.coverage
+
+# Ignorar binários e arquivos compilados
+*.o
+*.obj
+*.exe
+*.dll
+*.class
+*.pyc
+*.pyo
+*.pdb
+__pycache__/
+
+# Ignorar arquivos de cache
+.cache/
+.pnpm-store/
