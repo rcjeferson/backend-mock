@@ -1,7 +1,5 @@
 services:
   backend-mock:
-    env_file:
-      - ./.env
     build:
       dockerfile: ./docker/backend-mock.dockerfile
       context: .
