@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: backend-mock
+  name: backend-mock
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: backend-mock
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: backend-mock
+    spec:
+      containers:
+      - image: rcjeferson/backend-mock
+        name: backend-mock
+        ports:
+        - containerPort: 3000

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: backend-mock
+  name: backend-mock
+  namespace: jef
+spec:
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: backend-mock
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: backend-mock
+  sessionAffinity: None
+  type: ClusterIP

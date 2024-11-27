@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: backend-mock-demo
+  labels:
+    app: backend-mock-demo
+spec:
+  replicas: 1
+  revisionHistoryLimit: 1
+  selector:
+    matchLabels:
+      app: backend-mock
+  template:
+    metadata:
+      labels:
+        app: backend-mock
+    spec:
+      containers:
+      - image: rcjeferson/backend-mock:latest
+        name: backend-mock
+        ports:
+        - containerPort: 3000
