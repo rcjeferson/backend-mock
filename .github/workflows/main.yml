@@ -24,4 +24,5 @@ jobs:
       - name: Build and push image
         run: |
           docker compose build
-          docker compose push
+          docker tag rcjeferson/backend-mock rcjeferson/backend-mock:${{ github.sha }}
+          docker push rcjeferson/backend-mock:${{ github.sha }}
