@@ -13,3 +13,5 @@ docker compose -f docker-compose-dev.yml down
  Criado para workshop de Kubernetes
 
 # Teste
+
+V1
