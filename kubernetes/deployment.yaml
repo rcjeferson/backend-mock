@@ -19,5 +19,6 @@ spec:
       containers:
       - image: rcjeferson/backend-mock
         name: backend-mock
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
