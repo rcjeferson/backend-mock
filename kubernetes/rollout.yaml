@@ -20,3 +20,8 @@ spec:
         name: backend-mock
         ports:
         - containerPort: 3000
+  strategy:
+    blueGreen:
+      activeService: backend-mock
+      previewService: backend-mock-preview
+      autoPromotionEnabled: true
